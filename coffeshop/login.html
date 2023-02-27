@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./loginpage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <section class="transparent"></section>
+      <aside>
+        <img class="big-pic" src="./images/gambarsamping.jpg" alt="photos" />
+      </aside>
+      <section class="right-side">
+        <section class="head-right-side">
+          <a href="./index.html">
+            <section class="coffee-cont">
+              <img class="coffee" src="./images/coffee.png" alt="coffee" />
+              <p>Coffee shop</p>
+            </section>
+          </a>
+          <a href="./signup.html">
+            <button class="btn-signup">Sign Up</button>
+          </a>
+        </section>
+        <section class="title">
+          <h3>Login</h3>
+        </section>
+        <section class="form">
+          <form action="">
+            <label for="email">Email Adress :</label>
+            <input id="email" type="email" name="email" placeholder="Enter your email adress" />
+            <label for="pwd">Password :</label>
+            <input id="password" type="password" name="pwd" placeholder="Enter your password" />
+            <a href="./forgotpassword.html">
+              <p class="forgot-pwd">Forgot password?</p>
+            </a>
+            <div id="wrong-account"></div>
+            <!-- <br /> -->
+            <button class="btn-login" onclick="loginBtn();return false">Login</button> <br />
+            <button class="g-login"><img class="google-sign" src="./images/googlesign.png" alt="Google-sign.png" /> Login with Google</button>
+          </form>
+        </section>
+      </section>
+      <section class="card">
+        <section class="card-txt">
+          <h3 class="card-title">
+            Get your member <br />
+            card now!
+          </h3>
+          <p class="card-desc">Let's join with our member and enjoy the deals.</p>
+        </section>
+        <button class="btn">Create Now</button>
+      </section>
+    </main>
+
+    <footer>
+      <section class="bio">
+        <section class="coffee-cont">
+          <img class="coffee" src="./images/coffee.png" alt="coffe.png" />
+          <p class="footer-title">Coffee Shop</p>
+        </section>
+        <p class="bio-desc">
+          Coffee Shop is a store that sells some good <br />
+          meals, and especially coffee. We provide <br />
+          high quality beans
+        </p>
+        <section class="social-media">
+          <img class="FB" src="./images/coffeeshopFB.svg" alt="coffeeshopFB" />
+          <img class="TWT" src="./images/coffeeshopTWT.svg" alt="coffeeshopTWT" />
+          <img class="IG" src="./images/coffeeshopIG.svg" alt="coffeeshopIG" />
+        </section>
+        <p class="trademarks">©2020CoffeeStore</p>
+      </section>
+      <section class="product">
+        <p class="footer-title">Product</p>
+        <p class="footer-desc">Download</p>
+        <p class="footer-desc">Pricing</p>
+        <p class="footer-desc">Locations</p>
+        <p class="footer-desc">Countries</p>
+        <p class="footer-desc">Blog</p>
+      </section>
+      <section class="engage">
+        <p class="footer-title">Engage</p>
+        <p class="footer-desc">Coffee Shop ?</p>
+        <p class="footer-desc">FAQ</p>
+        <p class="footer-desc">About Us</p>
+        <p class="footer-desc">Privacy Policy</p>
+        <p class="footer-desc">Terms of Service</p>
+      </section>
+    </footer>
+  </body>
+  <script src="./loginpage.js"></script>
+</html>

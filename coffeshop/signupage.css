@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+}
+
+body {
+  position: relative;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:hover{ 
+  cursor: pointer;
+}
+
+#email-alert, #password-alert, #phone-alert {
+  padding-left: 1%;
+  color: red;
+  font-size: 16px;
+}
+
+/* picture */
+.big-pic {
+  width: 100%;
+  height: 1100px;
+}
+
+.coffee {
+  width: 30px;
+  height: 33px;
+}
+
+.google-sign {
+  width: 27px;
+  height: 28px;
+}
+/* picture */
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+aside {
+  flex: 1;
+  margin-right: 3.9%;
+}
+
+.right-side {
+  flex: 1;
+  margin-right: 8.2%;
+}
+
+.head-right-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 9.5%;
+}
+
+.coffee-cont {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: #0b132a;
+  gap: 15px;
+}
+
+.btn-login {
+  font-size: 16px;
+  background-color: #ffba33;
+  width: 150px;
+  height: 45px;
+  border: none;
+  border-radius: 50px;
+}
+
+.title {
+  display: flex;
+  font-size: 35px;
+  font-weight: 700;
+  color: #6a4029;
+}
+
+.title > h3 {
+  margin: 70px auto 59px auto;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  font-size: 20px;
+  color: #4f5665;
+}
+
+input {
+  display: flex;
+  margin: 13px 0 10px auto;
+  width: 505px;
+  height: 75px;
+  padding: 35px;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 20px;
+  border: 1px solid #4f5665;
+  background-color: white;
+}
+
+.btn-sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 auto;
+  width: 505px;
+  height: 75px;
+  font-size: 20px;
+  color: #6a4029;
+  background-color: #ffba33;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 6px 20px rgba(255, 186, 51, 0.4);
+}
+
+.g-sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 auto;
+  gap: 15px;
+  width: 505px;
+  height: 75px;
+  font-family: "Poppins";
+  font-size: 17px;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 6px 20px rgba(196, 196, 196, 0.67);
+}
+
+/* card */
+.card {
+  position: absolute;
+  top: 978.22px;
+  left: 163px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 79.2%;
+  height: 233px;
+  line-height: 45px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 6px 20px rgba(196, 196, 196, 0.67);
+}
+
+.card-title {
+  font-size: 35px;
+  font-weight: 500;
+  color: #0b132a;
+}
+
+.card-desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4f5665;
+}
+
+.btn {
+  width: 250px;
+  height: 60px;
+  background-color: #ffba33;
+  font-size: 16px;
+  color: #6a4029;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 6px 20px rgba(255, 186, 51, 0.4);
+}
+/* card */
+
+/* footer */
+footer {
+  display: flex;
+  margin-left: 10px;
+  padding-top: 175px;
+  padding-bottom: 90px;
+  line-height: 40px;
+  background-color: #f8f8f8;
+}
+
+.bio {
+  margin-left: 150px;
+  flex: 3;
+}
+
+.product {
+  flex: 1;
+}
+.engage {
+  flex: 1;
+}
+
+.bio-desc {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4f5665;
+}
+
+.social-media > img {
+  background-color: #6a4029;
+  border: 1px solid #ffba33;
+  border-radius: 30px;
+  box-shadow: 0px 13px 18px rgba(17, 19, 35, 0.08);
+  margin: 25px 10px 20px 0;
+}
+
+.trademarks {
+  color: #afb5c0;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.product .footer-desc,
+.engage .footer-desc {
+  font-weight: 400;
+  font-size: 16px;
+  color: #4f5665;
+}
+/* footer */
+
+@media screen and (max-width: 768px) {
+  .transparent {
+    background-color: hsla(0, 40%, 90%, 0.4);
+    width: 768px;
+    height: 1100px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  aside {
+    flex: 0;
+    margin: 0;
+  }
+
+  .big-pic {
+    margin: 0;
+    width: 768px;
+    position: absolute;
+    z-index: -2;
+  }
+
+  .right-side {
+    margin: auto;
+  }
+
+  .head-right-side {
+    justify-content: space-around;
+  }
+
+  .title > h3 {
+    margin-top: 40px;
+  }
+
+  .form {
+    display: flex;
+    justify-content: center;
+  }
+
+  form {
+    margin-left: 0;
+  }
+
+  label,
+  .forgot-pwd {
+    color: #000;
+    margin-left: 0;
+  }
+
+  input {
+    margin-left: 0;
+  }
+
+  .btn-login {
+    margin-left: 0;
+  }
+
+  .g-login {
+    margin-left: 0;
+  }
+
+  .card {
+    top: 930px;
+    left: 7%;
+    width: 650px;
+    height: 200px;
+  }
+
+  .card-txt {
+    margin-left: 20px;
+  }
+
+  .btn {
+    margin-right: 20px;
+  }
+
+  footer {
+    margin-top: 160px;
+    padding-top: 150px;
+    margin-left: 0;
+  }
+
+  .bio {
+    margin-left: 60px;
+  }
+}

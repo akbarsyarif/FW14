@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <link rel="stylesheet" href="./productdetails.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- TOP PART -->
+    <header>
+      <section class="coffee-cont">
+        <img class="coffee" src="./images/coffee.png" alt="coffee.png" />
+        <p>Coffee Shop</p>
+      </section>
+      <nav>
+        <a href="./index.html">
+          <p>Home</p>
+        </a>
+        <p class="active-page">Product</p>
+        <p>Your Cart</p>
+        <a href="./history.html">
+          <p>History</p>
+        </a>
+      </nav>
+      <img src="./images/menu-icon.svg" alt="menu-icon.svg" class="hamburger" />
+      <section class="profile-wrapper">
+        <input type="text" placeholder="Search" class="search" />
+        <div class="notif-cont">
+          <img class="notif" src="./images/notif.webp" alt="notif.webp" />
+        </div>
+        <a href="./profile.html">
+          <div class="profile">
+            <div class="profile-pic"></div>
+          </div>
+        </a>
+      </section>
+    </header>
+    <!-- TOP PART -->
+
+    <main>
+      <!-- Leftside -->
+      <section class="left-side">
+        <div class="left-side-tag">
+          <p>Favorite & Promo <span class="tag-name">> Cold Brew</span></p>
+        </div>
+        <div class="product-img-cont">
+          <div class="product-img"></div>
+        </div>
+        <div class="product-name">
+          <h1>COLD BREW</h1>
+        </div>
+        <div class="product-price">
+          <h3>IDR 30.000</h3>
+        </div>
+        <button class="add-cart">Add to Cart</button>
+        <button class="ask-staff">Ask a Staff</button>
+      </section>
+      <!-- Leftside -->
+
+      <!-- Rightside -->
+      <section class="right-side">
+        <div class="txt-cont">
+          <div class="txt-deliv-details">
+            <p>Delivery only on <span class="deliv-details-bold">Monday to friday</span> at <span class="deliv-details-bold">1 - 7 pm</span></p>
+          </div>
+          <div class="product-details">
+            <p>Cold brewing is a method of brewing that combines ground coffee and cool water and uses time instead of heat to extract the flavor. It is brewed in small batches and steeped for as long as 48 hours.</p>
+          </div>
+          <div class="pick-size">Choose a size</div>
+          <div>
+            <div class="size-cont">
+              <div class="size">R</div>
+              <div class="size">L</div>
+              <div class="size">XL</div>
+            </div>
+          </div>
+        </div>
+        <div class="pick-delivery-cont">
+          <div class="pick-delivery">Choose Delivery Methods</div>
+          <div class="delivery-cont">
+            <button class="delivery active-btn">Dine in</button>
+            <button class="delivery">Door Delivery</button>
+            <button class="delivery">Pick up</button>
+          </div>
+          <div class="time-cont">
+            <label for="time">Set time: </label>
+            <input type="text" name="time" placeholder="Enter the time you'll arrived" />
+          </div>
+        </div>
+      </section>
+      <!-- Rigthside -->
+
+      <!-- CARD -->
+      <section class="card-cont">
+        <div class="card-details-cont">
+          <div class="card-product">
+            <div class="card-img-cont">
+              <div class="card-img"></div>
+            </div>
+            <div class="card-details">
+              <div class="card-product-name">
+                <p>COLD BREW</p>
+              </div>
+              <p class="card-size">x1 (Large)</p>
+              <p class="card-size">x1 (Regular)</p>
+            </div>
+          </div>
+          <div class="quantity-cont">
+            <button>-</button>
+            <p class="quantity">2</p>
+            <button>+</button>
+          </div>
+        </div>
+        <button class="check-out">Checkout</button>
+      </section>
+      <!-- CARD -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <section class="bio">
+        <section class="coffee-cont">
+          <img class="coffee" src="./images/coffee.png" alt="coffe.png" />
+          <p class="footer-title">Coffee Shop</p>
+        </section>
+        <p class="bio-desc">
+          Coffee Shop is a store that sells some good <br />
+          meals, and especially coffee. We provide <br />
+          high quality beans
+        </p>
+        <section class="social-media">
+          <img class="FB" src="./images/Facebook.svg" alt="Facebook.svg" />
+          <img class="TWT" src="./images/Twitter.svg" alt="Twitter.svg" />
+          <img class="IG" src="./images/Instagram.svg" alt="Instagram.svg" />
+        </section>
+        <p class="trademarks">©2020CoffeeStore</p>
+      </section>
+      <section class="product">
+        <p class="footer-title">Product</p>
+        <p class="footer-desc">Download</p>
+        <p class="footer-desc">Pricing</p>
+        <p class="footer-desc">Locations</p>
+        <p class="footer-desc">Countries</p>
+        <p class="footer-desc">Blog</p>
+      </section>
+      <section class="engage">
+        <p class="footer-title">Engage</p>
+        <p class="footer-desc">Coffee Shop ?</p>
+        <p class="footer-desc">FAQ</p>
+        <p class="footer-desc">About Us</p>
+        <p class="footer-desc">Privacy Policy</p>
+        <p class="footer-desc">Terms of Service</p>
+      </section>
+    </footer>
+    <!-- Footer -->
+  </body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+
+    <link rel="stylesheet" href="./profilepage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- TOP SIDE -->
+    <header>
+      <section class="coffee-cont">
+        <img class="coffee" src="./images/coffee.png" alt="coffee.png" />
+        <p>Coffee Shop</p>
+      </section>
+      <img src="./images/menu-icon.svg" alt="hamburg" class="hamburger" onclick="toggleNavBar();return false" />
+      <nav class="nav-bar">
+        <a href="./index.html">
+          <p>Home</p>
+        </a>
+        <a href="./product-cust.html">
+          <p>Product</p>
+        </a>
+        <p>Your Cart</p>
+        <a href="./history.html">
+          <p>History</p>
+        </a>
+      </nav>
+      <section class="profile-wrapper">
+        <img class="search-icon" src="./images/search-icon.svg" alt="search-icon.svg" />
+        <div class="notif-cont">
+          <img class="notif" src="./images/notif.webp" alt="notif.webp" />
+        </div>
+        <p class="notif-text">Notification</p>
+        <div class="profile">
+          <div class="profile-pic"></div>
+        </div>
+      </section>
+    </header>
+    <!-- TOP SIDE -->
+
+    <main>
+      <section class="head">
+        <h1>User Profile</h1>
+      </section>
+      <section class="user-wrap">
+        <div class="user">
+          <div class="edit-photo">
+            <div class="edit-btn-profile">
+              <img src="./images/edit-btn.svg" alt="edit-btn.svg" />
+            </div>
+          </div>
+          <div class="user-pic"></div>
+        </div>
+        <p class="profile-name">Zulaikha</p>
+        <p class="profile-email">zulaikha17@gmail.com</p>
+        <p class="profile-detail">Has been ordered 15 products</p>
+        <div class="bottom-line"></div>
+      </section>
+      <!-- start contact section -->
+      <section class="contact-wrap">
+        <div class="contact">
+          <h2>Contacts</h2>
+          <div class="edit-btn" onclick="profileBtn();return false">
+            <img src="./images/edit-btn.svg" alt="edit-btn.svg" />
+          </div>
+        </div>
+        <div class="email-mobile-wrap">
+          <div class="form email">
+            <label id="email-alert" for="email">Email Adress :</label>
+            <input id="email" type="email" name="email" value="zulaikha17@gmail.com" />
+          </div>
+          <div class="form phone-number">
+            <label id="mobile-alert" for="phone-number">Mobile Number :</label>
+            <input id="phone-number" type="text" name="phone-number" value="081345678212" />
+            <!-- value="(+62)813456782" -->
+          </div>
+        </div>
+        <div class="form user-adress">
+          <label id="adress-alert" for="user-adress">Delivery Adress :</label>
+          <textarea id="adress" name="user-adress" rows="2">Iskandar Street no. 67 Block A Near Bus Stop</textarea>
+        </div>
+        <div class="bottom-line"></div>
+      </section>
+      <!-- start section details -->
+      <section class="details">
+        <div class="details-wrap">
+          <h2>Details</h2>
+          <div class="edit-btn">
+            <img src="./images/edit-btn.svg" alt="edit-btn.svg" />
+          </div>
+        </div>
+        <div class="displayname-birth-wrap">
+          <div class="form display-name">
+            <label for="display-name">Display name :</label>
+            <input type="text" name="display-name" value="Zulaikha" />
+          </div>
+          <div class="form birth">
+            <label for="birth">DD/MM/YY :</label>
+            <input type="date" name="birth" value="1990-04-03" />
+          </div>
+        </div>
+        <div class="fname-gender-wrap">
+          <div class="form fname">
+            <label for="first-name">First name :</label>
+            <input type="text" name="first-name" value="Zulaikha" />
+          </div>
+          <div class="gender">
+            <input type="radio" name="male" />
+            <label for="male">Male</label>
+            <br />
+            <input type="radio" name="female" />
+            <label for="female">Female</label>
+          </div>
+        </div>
+        <div class="form lname">
+          <label for="last-name">Last name :</label>
+          <input type="text" name="last-name" value="Nirmala" />
+        </div>
+        <div class="bottom-line"></div>
+      </section>
+      <!-- start section buttons -->
+      <section class="profile-btn">
+        <h3>Do you want to save the change?</h3>
+        <button class="save" onclick="saveBtn();return false">Save Change</button>
+        <button class="cancel" onclick="cancelBtn();return false">Cancel</button>
+      </section>
+      <section class="log-out">
+        <button>Edit Password <img src="./images/arrow-right.svg" alt="arrow-right.svg" /></button>
+        <button>Log out <img src="./images/arrow-right.svg" alt="arrow-right.svg" /></button>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <section class="bio">
+        <section class="coffee-cont">
+          <img class="coffee" src="./images/coffee.png" alt="coffe.png" />
+          <p class="footer-title">Coffee Shop</p>
+        </section>
+        <p class="bio-desc">
+          Coffee Shop is a store that sells some good <br />
+          meals, and especially coffee. We provide <br />
+          high quality beans
+        </p>
+        <section class="social-media">
+          <img class="FB" src="./images/Facebook.svg" alt="Facebook.svg" />
+          <img class="TWT" src="./images/Twitter.svg" alt="Twitter.svg" />
+          <img class="IG" src="./images/Instagram.svg" alt="Instagram.svg" />
+        </section>
+        <p class="trademarks">©2020CoffeeStore</p>
+      </section>
+      <section class="product">
+        <p class="footer-title">Product</p>
+        <p class="footer-desc">Download</p>
+        <p class="footer-desc">Pricing</p>
+        <p class="footer-desc">Locations</p>
+        <p class="footer-desc">Countries</p>
+        <p class="footer-desc">Blog</p>
+      </section>
+      <section class="engage">
+        <p class="footer-title">Engage</p>
+        <p class="footer-desc">Coffee Shop ?</p>
+        <p class="footer-desc">FAQ</p>
+        <p class="footer-desc">About Us</p>
+        <p class="footer-desc">Privacy Policy</p>
+        <p class="footer-desc">Terms of Service</p>
+      </section>
+    </footer>
+  </body>
+  <script src="./loginpage.js"></script>
+</html>
